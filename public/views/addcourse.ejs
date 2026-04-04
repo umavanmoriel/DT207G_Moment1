@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/addcourse.css">
         <title>Lägg till kurs</title>
     </head>
     <body>
@@ -15,7 +16,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="addcourse-main">
             <h1>Lägg till kurs</h1>
         
             <% if( locals.errors && errors.length > 0 ) { %>
@@ -26,25 +27,25 @@
                 </ul>
             <% } %>
             
-            <form action="/addcourse" method="post">
+            <form class="addcourse-form" action="/addcourse" method="post">
 
-                <div>
+                <div class="input-label-container">
                     <label for="courseCode">Kurskod</label>
                     <input type="text" id="courseCode" name="courseCode" value="<%= newCourseCode %>">    
                 </div>
-                <div>
+                <div class="input-label-container">
                     <label for="courseName">Kursnamn</label>
                     <input type="text" id="courseName" name="courseName" value="<%= newCourseName %>">
                 </div>                
-                <div>
+                <div class="input-label-container">
                     <label for="syllabus">Syllabus</label>
                     <input type="text" id="syllabus" name="syllabus" value="<%= newSyllabus %>">
                 </div>                
-                <div>
+                <div class="input-label-container">
                     <label for="progression">Progression (A eller B)</label>
                     <input type="text" id="progression" name="progression" value="<%= newProgression %>">
                 </div>                
-                <button type="submit">Lägg till</button>
+                <button class="addcourse-button" type="submit">Lägg till</button>
             </form>
     
         </main>
