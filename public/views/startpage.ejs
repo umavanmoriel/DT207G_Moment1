@@ -4,19 +4,46 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Startsida</title>
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/startpage.css">
     </head>
     <body>
         <header>
             <nav>
-                <ul>
-                    <li>Startsida</li>
+                <ul class="nav-list">
+                    <li><a href="/startpage">Mina kurser</a></li>
+                    <li><a href="/addcourse">Lägg till kurs</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-
+        <main class="courses-main">
+            <h1>Mina kurser</h1>   
+            <% if (courseList && courseList.length > 0) { %>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kurskod</th>
+                            <th>Kursnamn</th>
+                            <th>Kursplan</th>
+                            <th>Progression</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% courseList.forEach(course => { %>
+                        <tr>
+                            <td><%= course.courseCode %></td>
+                            <td><%= course.courseName %></td>
+                            <td><%= course.syllabus %></td>
+                            <td><%= course.progression%></td>
+                        </tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+            <% } else { %>
+                <p>Inga kurser tillagda än</p>
+            <% } %>
         </main>
-        <footer>
+        <footer class="footer-list">
             <ul>
                 <li>VT2025 DT207G</li>
                 <li>Backend-baserad webbutveckling</li>
