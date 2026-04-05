@@ -139,3 +139,9 @@ app.get('/delete/:id', (req, res) => {
         res.redirect('/startpage');
     });
 })
+
+
+// Om-sidan
+app.get('/about', (req, res) => {
+    res.render('about')
+})

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Om sidan</title>
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/startpage.css">
+        <script type="module" src="/js/headernav.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="/startpage">Mina kurser</a></li>
+                    <li><a href="/addcourse">Lägg till kurs</a></li>
+                    <li><a href="/about">Om sidan</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="about-main">
+            <h1>Om sidan</h1>
+            <p> 
+                Webbplatsen innehåller tre sidor: startsida, lägg till kurs-sida och om-sidan. 
+                Startsidan visar en tabell med alla kurser som har lagrats i databasen. 
+                För varje kurs visas kurskod, kursnamn, kursens progression och syllabus. 
+                Det finns även en knapp för att radera kursen från databasen. 
+                Lägg till kurs-sidan innehåller ett formulär som kan fyllas med kursinformation och spara kursen i databasen. 
+                Sparade kurser läggs in i tabellen på startsidan. 
+                För detta används MySQL som databasserver. 
+            </p>
+            <p>
+                Slutsatser som jag har dragit är att denna uppgift hjälpte mig att förstå serverbaserad webbutveckling och skillnaden mellan klient- och serversidan. 
+                Jag lärde mig att ansluta en Node.js-server till en MySQL-databas för att lagra och hämta kursinformation. Det var en mycket givande uppgift.
+            </p>
+        </main>
+        <footer>
+            <ul class="footer-list">
+                <li>VT2025 DT207G</li>
+                <li>Backend-baserad webbutveckling</li>
+            </ul>
+    </footer>
+    </body>
+</html>
