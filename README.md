@@ -6,7 +6,7 @@
 - Webbplatsen har tre sidor: startsida som visar alla kurser, lägg till kurs-sida med formulär för nya kurser och om-sida med information om webbplatsen.
 
 ## ER-diagram
-- ['ER-diagram'](er-diagram.drawio.svg)
+- [ER-diagram](er-diagram.drawio.svg)
 
 ## Installation och körning
 
@@ -24,8 +24,8 @@ npm install express mysql2 ejs
 - Klicka på "Välj fil" och välj [`databas.sql`](./databas.sql)
 - Klicka på "Kör" längst ner
 
-# 4) Starta servern
+### 4) Starta servern
 node server.js
 
-# 5) Öppna webbapplikationen
+### 5) Öppna webbapplikationen
 Gå till: `http://localhost:3000`
