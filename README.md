@@ -1,4 +1,4 @@
- # Lösningsöversikt
+ # Lösnings
 - Jag har byggt en webbapplikation i Node.js med Express som låter användare hantera sina lästa kurser.
 - Applikationen använder MySQL som databas och EJS som template engine för att dynamiskt generera webbsidor.
 - MySQL används för att lagra kursinformation i en tabell som heter "courses".
