@@ -24,6 +24,7 @@
                 <table>
                     <thead>
                         <tr>
+                            <th>Id</th>
                             <th>Kurskod</th>
                             <th>Kursnamn</th>
                             <th>Kursplan</th>
@@ -34,6 +35,7 @@
                     <tbody>
                         <% courseList.forEach(course => { %>
                         <tr>
+                            <td><%= course.id %></td>
                             <td><%= course.courseCode %></td>
                             <td><%= course.courseName %></td>
                             <td><%= course.syllabus %></td>

@@ -11,9 +11,10 @@ app.set('views', './public/views');
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Array för kurser (behålls för kompatibilitet)
+// Array för kurser
 const courseList = [
     {
+        id: '1',
         courseCode: '123456',
         courseName: 'Kurs 1',
         syllabus: 'Syllabus 1',
