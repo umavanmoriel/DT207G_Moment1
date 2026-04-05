@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/addcourse.css">
+        <script type="module" src="/js/headernav.js"></script>
         <title>Lägg till kurs</title>
     </head>
     <body>
@@ -20,7 +21,7 @@
             <h1>Lägg till kurs</h1>
         
             <% if( locals.errors && errors.length > 0 ) { %>
-                <ul>
+                <ul class="errors">
                     <% errors.forEach((error) => { %>
                         <li><%= error %></li>
                     <% }); %>

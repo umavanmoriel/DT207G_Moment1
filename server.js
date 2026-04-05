@@ -127,3 +127,15 @@ app.post('/addcourse', (req, res) => {
 app.listen(port, () => {
   console.log(`Servern körs på http://localhost:${port}`);
 })
+
+// radera kurs från tabell och databas
+app.get('/delete/:id', (req, res) => {
+    const kursId = req.params.id;
+    
+    db.query("DELETE FROM courses WHERE ID = ?", [kursId], (err) => {
+        if (err) {
+            console.log("Kunde inte radera:", err);
+        }
+        res.redirect('/startpage');
+    });
+})
