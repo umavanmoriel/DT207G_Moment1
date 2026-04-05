@@ -11,8 +11,8 @@
 ## Installation och körning
 
 ### 1) Klona repo
-git clone https://github.com/umavanmoriel/DT207G_Moment1.git
-cd DT207G_Moment1
+- git clone https://github.com/umavanmoriel/DT207G_Moment1.git
+- cd DT207G_Moment1
 
 ### 2) Installera beroenden
 npm install express mysql2 ejs
