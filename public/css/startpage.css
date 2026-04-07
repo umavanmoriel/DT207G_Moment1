@@ -53,3 +53,95 @@ tr:hover {
     opacity: 0.7;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1200px) and (min-width: 700px) {
+    .courses-main {
+        margin: 0px 30px;
+        padding: 50px 0px;
+    }
+
+    th, td {
+        padding: 20px;
+        text-wrap: wrap;
+        word-wrap: break-word;
+        max-width: 90px;
+        font-size: 14px;
+    }
+
+    td:last-child {
+        padding: 20px 10px;
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 699px) and (min-width: 500px) {
+    .courses-main {
+        margin: 0px 30px;
+        padding: 50px;
+        gap: 20px;
+    }
+
+    th, td {
+        padding: 20px 5px;
+        text-align: center;
+        font-size: 10px;
+        text-wrap: wrap;
+        word-wrap: break-word;
+        max-width: 80px;
+    }
+
+    td:nth-child(4) {
+        padding: 20px 0px;
+    }
+
+    td:last-child {
+        padding: 20px 10px;
+        max-width: 200px;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 20px;
+    }
+
+    .btn-delete {
+        padding: 10px px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .courses-main {
+        margin: 30px 0px;
+        padding: 100px 0px 200px 0px;
+        border-radius: 0px;
+        gap: 20px;
+    }
+
+    th, td {
+        padding: 1px 3px;
+        text-align: center;
+        font-size: 10px;
+        text-wrap: wrap;
+        word-wrap: break-word;
+        max-width: 80px;
+    }
+
+    td:nth-child(4) {
+        padding: 10px 0px;
+    }
+
+    td:last-child {
+        padding: 10px 3px;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 20px;
+    }
+
+    .deleteButton {
+        padding: 5px 3px;
+        font-size: 10px;
+    }
+}
